@@ -1,0 +1,7 @@
+C:\Ankit Patel\Lectures\VrundaBatch\ConsoleApp1\Overriding\bin\Debug\Overriding.exe.config
+C:\Ankit Patel\Lectures\VrundaBatch\ConsoleApp1\Overriding\bin\Debug\Overriding.exe
+C:\Ankit Patel\Lectures\VrundaBatch\ConsoleApp1\Overriding\bin\Debug\Overriding.pdb
+C:\Ankit Patel\Lectures\VrundaBatch\ConsoleApp1\Overriding\obj\Debug\Overriding.csproj.CoreCompileInputs.cache
+C:\Ankit Patel\Lectures\VrundaBatch\ConsoleApp1\Overriding\obj\Debug\Overriding.exe
+C:\Ankit Patel\Lectures\VrundaBatch\ConsoleApp1\Overriding\obj\Debug\Overriding.pdb
+C:\Ankit Patel\Lectures\VrundaBatch\ConsoleApp1\Overriding\obj\Debug\Overriding.csproj.AssemblyReference.cache
