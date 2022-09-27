@@ -1,0 +1,7 @@
+C:\Ankit Patel\Lectures\VrundaBatch\ConsoleApp1\Delegates\bin\Debug\Delegates.exe.config
+C:\Ankit Patel\Lectures\VrundaBatch\ConsoleApp1\Delegates\bin\Debug\Delegates.exe
+C:\Ankit Patel\Lectures\VrundaBatch\ConsoleApp1\Delegates\bin\Debug\Delegates.pdb
+C:\Ankit Patel\Lectures\VrundaBatch\ConsoleApp1\Delegates\obj\Debug\Delegates.csproj.CoreCompileInputs.cache
+C:\Ankit Patel\Lectures\VrundaBatch\ConsoleApp1\Delegates\obj\Debug\Delegates.exe
+C:\Ankit Patel\Lectures\VrundaBatch\ConsoleApp1\Delegates\obj\Debug\Delegates.pdb
+C:\Ankit Patel\Lectures\VrundaBatch\ConsoleApp1\Delegates\obj\Debug\Delegates.csproj.AssemblyReference.cache
