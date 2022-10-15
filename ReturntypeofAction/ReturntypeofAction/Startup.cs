@@ -49,6 +49,12 @@ namespace ReturntypeofAction
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                    name: "SendMsg",
+                    pattern: "GotoMyRoute",
+                    defaults: new { controller = "Default", action = "SendMsg" }
+                    );
+
+                endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Default}/{action=Index}/{id?}");
             });

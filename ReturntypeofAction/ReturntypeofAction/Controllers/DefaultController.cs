@@ -34,5 +34,20 @@ namespace ReturntypeofAction.Controllers
         {
             return RedirectPermanent("https://www.google.com");
         }
+
+        public RedirectToActionResult GotoAbout()
+        {
+            return RedirectToAction("SendMsg",new { msg= "Calling RedirectToAction" });
+        }
+
+        public RedirectToRouteResult GotoRoute()
+        {
+            return RedirectToRoute("SendMsg");
+        }
+
+        public FileResult GetFile()
+        {
+            return File("/css/site.css","text/plain","CommonSite.css");
+        }
     }
 }
