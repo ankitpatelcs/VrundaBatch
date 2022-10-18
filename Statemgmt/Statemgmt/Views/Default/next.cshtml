@@ -1,0 +1,12 @@
+﻿@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor _httpContextAccessor
+
+
+@{
+    ViewData["Title"] = "next";
+}
+
+<h1>next</h1>
+
+<h3>@_httpContextAccessor.HttpContext.Session.GetString("uname")</h3>
+<h3>@_httpContextAccessor.HttpContext.Session.Id</h3>
