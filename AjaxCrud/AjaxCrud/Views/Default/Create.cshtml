@@ -1,0 +1,87 @@
+﻿@model AjaxCrud.EDM.Tblemployee
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Tblemployee</h4>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="FName" class="control-label"></label>
+                <input asp-for="FName" class="form-control" />
+                <span asp-validation-for="FName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Salary" class="control-label"></label>
+                <input asp-for="Salary" class="form-control" />
+                <span asp-validation-for="Salary" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Mobile" class="control-label"></label>
+                <input asp-for="Mobile" class="form-control" />
+                <span asp-validation-for="Mobile" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"></label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Gender" class="control-label"></label>
+                <input asp-for="Gender" class="form-control" />
+                <span asp-validation-for="Gender" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="button" id="btn" value="Create" class="btn btn-info" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#btn").click(function () {
+            var empobj = {
+                "FName": $("#FName").val(),
+                "Salary": $("#Salary").val(),
+                "Mobile": $("#Mobile").val(),
+                "Email": $("#Email").val(),
+                "Password": $("#Password").val(),
+                "Address": $("#Address").val(),
+                "Gender": $("#Gender").val(),
+            };
+
+            $.ajax({
+                url: "/Default/Create",
+                type: "POST",
+                data: { obj: empobj },
+                datatype:"text",
+                success: function(msg){
+                    alert(msg);
+                    window.location.href="/Default/Index";
+                }
+            });
+        });
+    });
+</script>
