@@ -72,7 +72,7 @@ namespace ProjectDemoCore
                 
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{area=Admin}/{controller=Master}/{action=Login}/{id?}");
+                    pattern: "{area=Users}/{controller=Default}/{action=HomePage}/{id?}");
             });
         }
     }

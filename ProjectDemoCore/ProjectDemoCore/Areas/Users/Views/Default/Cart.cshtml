@@ -1,0 +1,93 @@
+﻿@model IEnumerable<ProjectDemoCore.EDM.Tblcart>
+
+@{
+    ViewData["Title"] = "Cart";
+    Layout = "~/Areas/Users/Views/User_Layout.cshtml";
+    double? Amount = 0;
+    double? CartTotal = 0;
+}
+<div class="products">
+    <div class="container">
+        <h2>Cart</h2>
+
+        <p>
+            <br />
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Product Image
+                    </th>
+                    <th>
+                        Product Name
+                    </th>
+                    <th>Product Cost</th>
+                    <th>Discounted cost</th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Qty)
+                    </th>
+                    <th>
+                        Amount
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            <img src="~/Images/Products/@item.Product.Image1" height="50" width="50" />
+                        </td>
+                        <td>
+                            @item.Product.ProductName
+                        </td>
+                        <td>@item.Product.Cost</td>
+                        <td>
+                            @(item.Product.Cost-(item.Product.Cost*item.Product.Discount/100))
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Qty)
+                        </td>
+                        <td>
+                            @{ 
+                                Amount = (item.Product.Cost - (item.Product.Cost * item.Product.Discount / 100)) * item.Qty;
+                                CartTotal += Amount;
+                            }
+                            @Amount
+                        </td>
+                        <td>
+                            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <br />
+        <div class="col-md-3">
+            <table class="table">
+                <tr>
+                    <th colspan="2">Cart Summary</th>
+                </tr>
+                <tr>
+                    <th>Cart Total</th>
+                    <td>₹ @CartTotal</td>
+                </tr>
+                <tr>
+                    <th>GST @@18%</th>
+                    <td>₹ @(CartTotal*18/100)</td>
+                </tr>
+                <tr>
+                    <th>Total Amount</th>
+                    <td>₹ @(CartTotal+(CartTotal*18/100))</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <a href="/Users/Default/Checkout" class="btn btn-success">Checkout</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
