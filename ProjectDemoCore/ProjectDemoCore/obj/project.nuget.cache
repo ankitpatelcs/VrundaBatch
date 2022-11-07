@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pLZPtSLXxYjEnRCHNWAkxW8LO2t8R0ZCalJlhJ0FROFhh6ZFHKZ8yeCc4Bdk6z6Tn3RnYm+olOftL2TgCeFR9w==",
+  "dgSpecHash": "o+ZCReiHASYoR56rN2niHSsotiMS4le1/gK3ChY4nWx3luVmuJil7eBvlcihiUlCCByTd1scgMufEuI0jpD7BQ==",
   "success": true,
   "projectFilePath": "C:\\Ankit Patel\\Lectures\\VrundaBatch\\ProjectDemoCore\\ProjectDemoCore\\ProjectDemoCore.csproj",
   "expectedPackageFiles": [
@@ -130,7 +130,8 @@
     "C:\\Users\\ankit patel\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\ankit patel\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\ankit patel\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\ankit patel\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\ankit patel\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\ankit patel\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
   ],
   "logs": []
 }
